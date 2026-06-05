@@ -1,1 +1,280 @@
+/* ==========================
+   FADE IN
+========================== */
 
+.fade-in{
+    opacity:0;
+    animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ==========================
+   FADE UP
+========================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(50px);
+    animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   FLOAT
+========================== */
+
+.float{
+
+    animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   GLOW PULSE
+========================== */
+
+.glow{
+
+    animation:glowPulse 3s ease infinite;
+}
+
+@keyframes glowPulse{
+
+    0%{
+        box-shadow:
+        0 0 0 rgba(124,58,237,0);
+    }
+
+    50%{
+        box-shadow:
+        0 0 40px rgba(124,58,237,.45);
+    }
+
+    100%{
+        box-shadow:
+        0 0 0 rgba(124,58,237,0);
+    }
+
+}
+
+/* ==========================
+   ROTATE RINGS
+========================== */
+
+.ring-1{
+    animation:rotateRing 20s linear infinite;
+}
+
+.ring-2{
+    animation:rotateRingReverse 25s linear infinite;
+}
+
+.ring-3{
+    animation:rotateRing 30s linear infinite;
+}
+
+@keyframes rotateRing{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes rotateRingReverse{
+
+    from{
+        transform:rotate(360deg);
+    }
+
+    to{
+        transform:rotate(0deg);
+    }
+
+}
+
+/* ==========================
+   GRADIENT SHIFT
+========================== */
+
+.gradient-animated{
+
+    background-size:300% 300%;
+
+    animation:gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* ==========================
+   HERO TITLE
+========================== */
+
+.hero-left h1{
+
+    animation:
+    heroTitle 1.2s ease;
+}
+
+@keyframes heroTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(60px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+
+}
+
+/* ==========================
+   BUTTON HOVER
+========================== */
+
+.primary-btn,
+.secondary-btn{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.primary-btn::before,
+.secondary-btn::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:120%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+
+    transition:.8s;
+}
+
+.primary-btn:hover::before,
+.secondary-btn:hover::before{
+
+    left:120%;
+}
+
+/* ==========================
+   PROJECT HOVER
+========================== */
+
+.project-card{
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+}
+
+.project-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.02);
+}
+
+/* ==========================
+   SOCIAL ICON BOUNCE
+========================== */
+
+.social-card:hover{
+
+    animation:
+    socialBounce .5s ease;
+}
+
+@keyframes socialBounce{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(-8px);
+    }
+
+}
