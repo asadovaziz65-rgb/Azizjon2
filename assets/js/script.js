@@ -1,1 +1,1 @@
-console.log("Aziz Portfolio");
+console.log("Aziz Asadov Portfolio Loaded");
