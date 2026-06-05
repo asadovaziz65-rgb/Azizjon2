@@ -1,2 +1,25 @@
+:root{
+    --bg:#050816;
+    --card:#0B1220;
+    --accent:#7C3AED;
+    --accent2:#06B6D4;
+    --text:#ffffff;
+    --muted:#94A3B8;
+}
 
-/* Aziz Portfolio */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter, sans-serif;
+    overflow-x:hidden;
+}
