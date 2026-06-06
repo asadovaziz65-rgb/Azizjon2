@@ -961,7 +961,7 @@ border-color:rgba(255,255,255,.08);
 }
 
 /* ====================================
-   FLOATING TAGS - YANGI POZITSIYA
+   FLOATING TAGS
 ==================================== */
 
 .floating-tag{
@@ -1171,12 +1171,6 @@ margin-bottom:18px;
 
 }
 
-.large-card p:last-child{
-
-margin-bottom:0;
-
-}
-
 /* ====================================
    INFO CARDS
 ==================================== */
@@ -1230,6 +1224,142 @@ margin-bottom:8px;
 font-size:13px;
 
 color:var(--muted);
+
+}
+
+/* ====================================
+   SERVICES
+==================================== */
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+
+gap:25px;
+
+}
+
+.service-card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(24px);
+
+border-radius:20px;
+
+padding:35px;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.service-card::before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(90deg, transparent, rgba(124,58,237,.1), transparent);
+
+transition:.6s;
+
+}
+
+.service-card:hover{
+
+border-color:rgba(124,58,237,.4);
+
+background:rgba(124,58,237,.08);
+
+}
+
+.service-card:hover::before{
+
+left:100%;
+
+}
+
+.service-icon{
+
+width:60px;
+
+height:60px;
+
+background:linear-gradient(135deg, rgba(124,58,237,.2), rgba(6,182,212,.2));
+
+border:1px solid rgba(124,58,237,.3);
+
+border-radius:15px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin-bottom:20px;
+
+transition:.3s;
+
+}
+
+.service-icon i{
+
+font-size:28px;
+
+background:linear-gradient(135deg, #7C3AED, #06B6D4);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.service-card:hover .service-icon{
+
+transform:scale(1.1);
+
+background:linear-gradient(135deg, rgba(124,58,237,.3), rgba(6,182,212,.3));
+
+}
+
+.service-card h3{
+
+font-size:20px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+.service-card p{
+
+color:var(--muted);
+
+font-size:14px;
+
+line-height:1.6;
+
+margin:0;
 
 }
 
@@ -1300,6 +1430,20 @@ background:linear-gradient(135deg, #7C3AED, #06B6D4);
 border-radius:50%;
 
 border:3px solid #050816;
+
+animation: timelinePulse 2s ease-in-out infinite;
+
+}
+
+@keyframes timelinePulse{
+
+0%, 100%{
+box-shadow: 0 0 0 rgba(124,58,237,0);
+}
+
+50%{
+box-shadow: 0 0 15px rgba(124,58,237,0.5);
+}
 
 }
 
@@ -1379,6 +1523,16 @@ padding:40px 30px;
 
 text-align:center;
 
+transition:.3s;
+
+}
+
+.achievement-card:hover{
+
+transform:translateY(-5px);
+
+border-color:rgba(124,58,237,.4);
+
 }
 
 .achievement-card h3{
@@ -1394,6 +1548,8 @@ background:linear-gradient(135deg, #7C3AED, #06B6D4);
 -webkit-text-fill-color:transparent;
 
 margin-bottom:12px;
+
+animation: numberGlow 4s ease infinite;
 
 }
 
@@ -1442,6 +1598,8 @@ transition:.35s;
 border-color:rgba(124,58,237,.4);
 
 background:rgba(124,58,237,.08);
+
+transform:translateY(-5px);
 
 }
 
@@ -1543,7 +1701,7 @@ margin:60px 0;
 
 padding:40px 30px;
 
-background:linear-gradient(135deg, rgba(124,58,237,.05), rgba(6,182,212,.05));
+background:linear-gradient(135deg, rgba(124,58,237,.08), rgba(6,182,212,.08));
 
 border:1px solid rgba(124,58,237,.2);
 
@@ -1633,6 +1791,26 @@ text-align:center;
 
 transition:.35s;
 
+position:relative;
+
+overflow:hidden;
+
+}
+
+.skill-card::before{
+
+content:'';
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(135deg, rgba(124,58,237,.1), transparent);
+
+opacity:0;
+
+transition:.3s;
+
 }
 
 .skill-card:hover{
@@ -1640,6 +1818,12 @@ transition:.35s;
 border-color:rgba(124,58,237,.4);
 
 background:rgba(124,58,237,.08);
+
+}
+
+.skill-card:hover::before{
+
+opacity:1;
 
 }
 
@@ -1656,6 +1840,14 @@ background:linear-gradient(135deg, #7C3AED, #06B6D4);
 margin-bottom:15px;
 
 display:block;
+
+transition:.3s;
+
+}
+
+.skill-card:hover i{
+
+transform:scale(1.2) rotateZ(10deg);
 
 }
 
@@ -1717,6 +1909,8 @@ border-color:rgba(124,58,237,.4);
 
 background:rgba(124,58,237,.08);
 
+transform:translateY(-8px);
+
 }
 
 .social-card i{
@@ -1732,6 +1926,14 @@ background:linear-gradient(135deg, #7C3AED, #06B6D4);
 margin-bottom:15px;
 
 display:block;
+
+transition:.3s;
+
+}
+
+.social-card:hover i{
+
+transform:scale(1.3);
 
 }
 
@@ -1887,8 +2089,18 @@ margin-bottom:6px;
 
 }
 
-.footer-bottom p:last-child{
+@keyframes numberGlow{
 
-margin-bottom:0;
+0%{
+filter: drop-shadow(0 0 0px transparent);
+}
+
+50%{
+filter: drop-shadow(0 0 18px rgba(124,58,237,.6));
+}
+
+100%{
+filter: drop-shadow(0 0 0px transparent);
+}
 
 }
