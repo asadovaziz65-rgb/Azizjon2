@@ -218,6 +218,8 @@ box-shadow .4s ease;
 box-shadow:
 0 25px 50px rgba(124,58,237,.15);
 
+transform: translateY(-5px);
+
 }
 
 /* ====================================
@@ -243,6 +245,20 @@ rotate(8deg);
    SKILL CARD
 ==================================== */
 
+.skill-card{
+
+transition: all .4s ease;
+
+}
+
+.skill-card:hover{
+
+transform: translateY(-8px);
+
+box-shadow: 0 15px 40px rgba(124,58,237,.2);
+
+}
+
 .skill-card i{
 
 transition:
@@ -253,13 +269,25 @@ transform .4s ease;
 .skill-card:hover i{
 
 transform:
-scale(1.2);
+scale(1.25);
 
 }
 
 /* ====================================
    ACHIEVEMENT
 ==================================== */
+
+.achievement-card{
+
+transition: all .4s ease;
+
+}
+
+.achievement-card:hover{
+
+transform: scale(1.05);
+
+}
 
 .achievement-card h3{
 
@@ -297,7 +325,7 @@ drop-shadow(0 0 0px transparent);
 }
 
 /* ====================================
-   LOADER
+   LOADER - IMPROVED
 ==================================== */
 
 .loader-line{
@@ -336,6 +364,16 @@ opacity:.4;
 
 }
 
+}
+
+/* LOADER FADE OUT */
+#loader.hidden {
+  animation: fadeOut .6s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
 }
 
 /* ====================================
@@ -383,4 +421,45 @@ transition:.6s;
 
 left:120%;
 
+}
+
+/* ====================================
+   SCROLL REVEAL
+==================================== */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  animation: slideUp .8s ease forwards;
+}
+
+/* ====================================
+   NAVBAR ACTIVE STATE
+==================================== */
+
+.navbar a.active {
+  color: #06B6D4;
+}
+
+.navbar a.active::after {
+  width: 100%;
+}
+
+/* ====================================
+   HEADER SCROLL EFFECT
+==================================== */
+
+.header.scrolled {
+  background: rgba(11,18,32,.95);
+  border-color: rgba(124,58,237,.2);
+  box-shadow: 0 10px 40px rgba(0,0,0,.3);
 }

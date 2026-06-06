@@ -1,527 +1,222 @@
 /* ====================================
-   LARGE TABLET
+   RESPONSIVE DESIGN
 ==================================== */
 
-@media(max-width:1200px){
+/* TABLET (768px) */
+@media (max-width: 768px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 52px;
+  }
+
+  .hero-left h2 {
+    font-size: 28px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .section-header h2 {
+    font-size: 42px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .floating-dock {
+    bottom: 20px;
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .dock-tooltip {
+    display: none;
+  }
+
+  .hero-mini-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .header .container {
+    padding: 14px 20px;
+  }
+
+  .logo-content h4 {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .projects-grid,
+  .achievement-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
+
+/* MOBILE (480px) */
+@media (max-width: 480px) {
+
+  .hero-left h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .hero-left h2 {
+    font-size: 22px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
 
-.hero-grid{
+  .section-header h2 {
+    font-size: 32px;
+  }
 
-grid-template-columns:1fr;
+  .section-header p {
+    font-size: 15px;
+  }
 
-text-align:center;
+  .stat-item h3 {
+    font-size: 32px;
+  }
 
-gap:60px;
+  .stat-item span {
+    font-size: 12px;
+  }
 
-}
-
-.hero-left{
-
-order:2;
-
-}
-
-.hero-right{
-
-order:1;
-
-}
-
-.hero-left p{
-
-margin-left:auto;
-
-margin-right:auto;
-
-}
-
-.hero-buttons{
-
-justify-content:center;
-
-}
-
-.hero-mini-stats{
-
-justify-content:center;
-
-}
-
-.about-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.achievement-grid{
-
-grid-template-columns:
-repeat(2,1fr);
-
-}
-
-.projects-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.skills-grid{
-
-grid-template-columns:
-repeat(2,1fr);
-
-}
-
-.social-grid{
-
-grid-template-columns:
-repeat(3,1fr);
-
-}
-
-}
-
-/* ====================================
-   TABLET
-==================================== */
-
-@media(max-width:992px){
-
-.section{
-
-padding:100px 0;
-
-}
-
-.section-header h2{
-
-font-size:48px;
-
-}
-
-.hero-left h1{
-
-font-size:64px;
-
-}
-
-.contact-box h2{
-
-font-size:48px;
-
-}
-
-.timeline::before{
-
-left:20px;
-
-}
-
-.timeline-item{
-
-width:100%;
-
-left:0 !important;
-
-padding-left:60px;
-
-padding-right:0;
-
-text-align:left !important;
-
-}
-
-.timeline-item::before{
-
-left:11px !important;
-
-right:auto !important;
-
-}
-
-.footer-top{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.footer-bottom{
-
-flex-direction:column;
-
-gap:20px;
-
-text-align:center;
-
-}
-
-}
-
-/* ====================================
-   MOBILE
-==================================== */
-
-@media(max-width:768px){
-
-.header{
-
-top:10px;
-
-width:95%;
-
-}
-
-.header .container{
-
-padding:16px;
-
-}
-
-.navbar{
-
-display:none;
-
-}
-
-.mobile-menu-btn{
-
-display:block;
-
-}
-
-.hero{
-
-padding-top:140px;
-
-min-height:auto;
-
-}
-
-.hero-left h1{
-
-font-size:46px;
-
-letter-spacing:-2px;
-
-}
-
-.hero-left h2{
-
-font-size:28px;
-
-}
-
-.hero-left p{
-
-font-size:16px;
-
-}
-
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-width:100%;
-
-}
-
-.hero-mini-stats{
-
-flex-direction:column;
-
-gap:20px;
-
-}
-
-.avatar-area{
-
-width:360px;
-
-height:360px;
-
-}
+  .primary-btn,
+  .secondary-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
 
-.avatar-area img{
+  .project-card {
+    padding: 20px;
+  }
 
-width:230px;
+  .achievement-card h3 {
+    font-size: 32px;
+  }
 
-height:230px;
+  .skill-card {
+    padding: 20px;
+  }
 
-}
-
-.ring-1{
-
-width:260px;
-
-height:260px;
-
-}
-
-.ring-2{
-
-width:320px;
-
-height:320px;
-
-}
-
-.ring-3{
-
-width:380px;
-
-height:380px;
-
-}
-
-.floating-tag{
-
-display:none;
-
-}
-
-.about-right{
-
-grid-template-columns:1fr;
-
-}
-
-.skills-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.social-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.contact-box{
-
-padding:40px 25px;
-
-}
-
-.contact-box h2{
-
-font-size:36px;
-
-}
-
-.contact-actions{
-
-flex-direction:column;
-
-}
-
-.floating-dock{
-
-bottom:20px;
-
-top:auto;
-
-right:50%;
-
-transform:translateX(50%);
-
-flex-direction:row;
-
-}
-
-.footer-links{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-}
-
-/* ====================================
-   SMALL MOBILE
-==================================== */
-
-@media(max-width:480px){
-
-.container{
-
-width:94%;
-
-}
-
-.hero-left h1{
-
-font-size:38px;
-
-}
+  .skill-card i {
+    font-size: 32px;
+  }
 
-.hero-left h2{
+  .header {
+    width: 95%;
+  }
 
-font-size:24px;
+  .container {
+    width: 95%;
+  }
 
-}
-
-.section-header h2{
-
-font-size:36px;
-
-}
-
-.large-card h3{
-
-font-size:30px;
-
-}
-
-.project-card{
-
-padding:28px;
-
-}
-
-.project-card h3{
-
-font-size:24px;
-
-}
-
-.contact-box h2{
-
-font-size:30px;
-
-}
-
-.footer-brand{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.footer-links{
-
-gap:15px;
-
-}
-
-.dock-item{
-
-width:50px;
-
-height:50px;
-
-}
-
-.dock-item i{
-
-font-size:18px;
+  .bg-gradient-1,
+  .bg-gradient-2,
+  .bg-gradient-3 {
+    width: 300px;
+    height: 300px;
+  }
 
-}
-
-}
-
-/* ====================================
-   EXTRA LARGE
-==================================== */
-
-@media(min-width:1600px){
-
-.container{
-
-max-width:1500px;
-
-}
-
-.hero-left h1{
-
-font-size:96px;
-
-}
-
-.hero-left h2{
-
-font-size:42px;
-
-}
-
-.avatar-area{
+  .floating-dock {
+    bottom: 15px;
+  }
 
-width:650px;
+  .dock-item {
+    width: 50px;
+    height: 50px;
+  }
 
-height:650px;
+  .dock-item i {
+    font-size: 18px;
+  }
 
-}
-
-.avatar-area img{
-
-width:400px;
-
-height:400px;
-
-}
-
-}
-
-/* ====================================
-   LANDSCAPE PHONE
-==================================== */
+  .hero-mini-stats {
+    gap: 20px;
+  }
 
-@media(max-height:600px){
+  .floating-tag {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
 
-.hero{
-
-padding-top:160px;
-
 }
-
-.avatar-area{
-
-width:300px;
-
-height:300px;
 
-}
+/* SMALL DEVICES (360px) */
+@media (max-width: 360px) {
 
-.avatar-area img{
+  .hero-left h1 {
+    font-size: 36px;
+  }
 
-width:200px;
+  .section-header h2 {
+    font-size: 28px;
+  }
 
-height:200px;
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
 
-}
+  .floating-dock {
+    gap: 8px;
+    bottom: 10px;
+  }
 
 }
 
-/* ====================================
-   TOUCH DEVICES
-==================================== */
+/* LANDSCAPE */
+@media (orientation: landscape) and (max-height: 600px) {
 
-@media(hover:none){
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
 
-.project-card:hover,
-.skill-card:hover,
-.social-card:hover,
-.info-card:hover,
-.achievement-card:hover{
-
-transform:none;
-
-}
+  .section {
+    padding: 60px 0;
+  }
 
 }
