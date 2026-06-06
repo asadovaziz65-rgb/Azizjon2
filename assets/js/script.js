@@ -1,4 +1,47 @@
 // ====================================
+//    LANGUAGE TOGGLE
+// ====================================
+
+const langBtns = document.querySelectorAll('.lang-btn');
+let currentLang = 'uz';
+
+langBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+const lang = btn.dataset.lang;
+changeLanguage(lang);
+});
+});
+
+function changeLanguage(lang) {
+currentLang = lang;
+
+// Update active button
+langBtns.forEach(btn => btn.classList.remove('active'));
+document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+
+// Toggle all language spans
+document.querySelectorAll('.lang-uz, .lang-en').forEach(el => {
+el.style.display = 'none';
+});
+
+if (lang === 'uz') {
+document.querySelectorAll('.lang-uz').forEach(el => {
+el.style.display = 'inline';
+});
+} else {
+document.querySelectorAll('.lang-en').forEach(el => {
+el.style.display = 'inline';
+});
+}
+
+localStorage.setItem('preferredLang', lang);
+}
+
+// Load saved language
+const savedLang = localStorage.getItem('preferredLang') || 'uz';
+changeLanguage(savedLang);
+
+// ====================================
 //    LOADER HIDE
 // ====================================
 
@@ -9,7 +52,7 @@ loader.classList.add('hidden');
 setTimeout(() => {
 loader.style.display = 'none';
 }, 600);
-}, 2000);
+}, 2500);
 });
 
 // ====================================
@@ -30,7 +73,7 @@ header.classList.remove('scrolled');
 //    NAVBAR ACTIVE LINK
 // ====================================
 
-const navLinks = document.querySelectorAll('.navbar a');
+const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
 link.addEventListener('click', () => {
@@ -74,7 +117,7 @@ observer.unobserve(entry.target);
 });
 }, observerOptions);
 
-document.querySelectorAll('.section, .project-card, .achievement-card, .service-item, .skills-column').forEach(el => {
+document.querySelectorAll('.section, .project-card, .achievement-card, .tech-item, .skills-column').forEach(el => {
 observer.observe(el);
 });
 
@@ -102,7 +145,7 @@ const id = entry.target.getAttribute('id');
 navLinks.forEach(link => {
 link.classList.remove('active');
 });
-const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
+const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
 if (activeLink) {
 activeLink.classList.add('active');
 }

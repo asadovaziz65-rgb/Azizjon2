@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aziz Asadov | AI Builder & Digital Creator</title>
-<meta name="description" content="Aziz Asadov - AI Builder, Digital Creator, Startup Founder, AI Team Leader. Sun'iy intellekt, avtomatlashtirish tizimlari, Telegram botlar va premium AI kontent ishlab chiqarish.">
-<meta name="keywords" content="Aziz Asadov, AI Builder, Digital Creator, AI, Telegram Bot, Automation, Startup Founder">
+<meta name="description" content="Aziz Asadov - AI Builder, Digital Creator, Startup Founder. AI systems, Telegram bots, automation platforms.">
+<meta name="keywords" content="Aziz Asadov, AI Builder, Digital Creator, AI, Telegram Bot">
 <meta name="author" content="Aziz Asadov">
 
 <link rel="icon" href="/assets/icons/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <link rel="stylesheet" href="/assets/css/style.css">
@@ -21,13 +20,30 @@
 <link rel="stylesheet" href="/assets/css/responsive.css">
 
 </head>
-
 <body>
 
-<!-- LOADER -->
+<!-- LANGUAGE TOGGLE -->
+<div class="language-toggle">
+<button class="lang-btn active" data-lang="uz">
+<i class="fas fa-globe"></i> O'Z
+</button>
+<button class="lang-btn" data-lang="en">
+<i class="fas fa-globe"></i> EN
+</button>
+</div>
+
+<!-- PREMIUM LOADER -->
 <div id="loader">
 <div class="loader-wrapper">
 <div class="loader-content">
+<div class="loader-cube">
+<div class="cube-face"></div>
+<div class="cube-face"></div>
+<div class="cube-face"></div>
+<div class="cube-face"></div>
+<div class="cube-face"></div>
+<div class="cube-face"></div>
+</div>
 <div class="loader-logo">AZIZ</div>
 <div class="loader-line"></div>
 <div class="loader-dots">
@@ -36,7 +52,8 @@
 <span></span>
 </div>
 </div>
-<div class="loader-text">Yuklanyapti...</div>
+<div class="loader-text"><span class="loader-lang-uz">Yuklanyapti...</span><span class="loader-lang-en" style="display:none;">Loading...</span></div>
+<div class="loader-progress"><div class="progress-bar"></div></div>
 </div>
 </div>
 
@@ -48,15 +65,15 @@
 
 <!-- FLOATING CONTACT DOCK -->
 <div class="floating-dock">
-<a href="tel:+998505033441" class="dock-item">
+<a href="tel:+998505033441" class="dock-item" title="Call">
 <i class="fas fa-phone"></i>
 <span class="dock-tooltip">+998 50 503 34 41</span>
 </a>
-<a href="https://t.me/Azizjon_Asadov" target="_blank" class="dock-item">
+<a href="https://t.me/Azizjon_Asadov" target="_blank" class="dock-item" title="Telegram">
 <i class="fab fa-telegram"></i>
 <span class="dock-tooltip">@Azizjon_Asadov</span>
 </a>
-<a href="https://instagram.com/azizasadov_official" target="_blank" class="dock-item">
+<a href="https://instagram.com/azizasadov_official" target="_blank" class="dock-item" title="Instagram">
 <i class="fab fa-instagram"></i>
 <span class="dock-tooltip">@azizasadov_official</span>
 </a>
@@ -69,16 +86,16 @@
 <img src="/assets/images/avatar.png" alt="Aziz Asadov">
 <div class="logo-content">
 <h4>Aziz Asadov</h4>
-<span>AI Builder • Digital Creator</span>
+<span class="logo-subtitle"><span class="lang-uz">AI Builder • Digital Creator</span><span class="lang-en" style="display:none;">AI Builder • Digital Creator</span></span>
 </div>
 </div>
 <nav class="navbar">
-<a href="#home">Bosh sahifa</a>
-<a href="#about">Men haqimda</a>
-<a href="#experience">Tajriba</a>
-<a href="#projects">Loyihalar</a>
-<a href="#skills">Ko'nikmalar</a>
-<a href="#contact">Aloqa</a>
+<a href="#home" class="nav-link"><span class="lang-uz">Bosh sahifa</span><span class="lang-en" style="display:none;">Home</span></a>
+<a href="#about" class="nav-link"><span class="lang-uz">Men haqimda</span><span class="lang-en" style="display:none;">About</span></a>
+<a href="#experience" class="nav-link"><span class="lang-uz">Tajriba</span><span class="lang-en" style="display:none;">Experience</span></a>
+<a href="#projects" class="nav-link"><span class="lang-uz">Loyihalar</span><span class="lang-en" style="display:none;">Projects</span></a>
+<a href="#skills" class="nav-link"><span class="lang-uz">Ko'nikmalar</span><span class="lang-en" style="display:none;">Skills</span></a>
+<a href="#contact" class="nav-link"><span class="lang-uz">Aloqa</span><span class="lang-en" style="display:none;">Contact</span></a>
 </nav>
 <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
 </div>
@@ -90,29 +107,37 @@
 <div class="hero-grid">
 <div class="hero-left">
 <div class="hero-badge">
-AI Builder · Creator · Startup Founder
+<span class="lang-uz">AI Builder • Creator • Startup Founder</span>
+<span class="lang-en" style="display:none;">AI Builder • Creator • Startup Founder</span>
 </div>
 <h1>Aziz Asadov</h1>
-<h2>Sun'iy Intellekt Orqali<br>Real Biznes Yechimlari</h2>
+<h2>
+<span class="lang-uz">Sun'iy Intellekt Orqali<br>Real Biznes Yechimlari</span>
+<span class="lang-en" style="display:none;">AI-Powered<br>Business Solutions</span>
+</h2>
 <p>
-Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI kontentlar ishlab chiqishga ixtisoslashganman. Mening maqsadim — g'oyalarni real ishlaydigan raqamli mahsulotlarga aylantirish.
+<span class="lang-uz">Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI kontentlar ishlab chiqishga ixtisoslashganman. Mening maqsadim – g'oyalarni real ishlaydigan raqamli mahsulotlarga aylantirish.</span>
+<span class="lang-en" style="display:none;">I specialize in AI systems, Telegram bots, automation platforms and premium AI content creation. My goal is to transform ideas into real digital products.</span>
 </p>
 <div class="hero-buttons">
-<a href="#projects" class="primary-btn">Loyihalarni Ko'rish</a>
-<a href="#contact" class="secondary-btn">Bog'lanish</a>
+<a href="#projects" class="primary-btn"><span class="lang-uz">Loyihalarni Ko'rish</span><span class="lang-en" style="display:none;">View Projects</span></a>
+<a href="#contact" class="secondary-btn"><span class="lang-uz">Bog'lanish</span><span class="lang-en" style="display:none;">Contact</span></a>
 </div>
 <div class="hero-mini-stats">
 <div class="stat-item">
 <h3>20+</h3>
-<span>AI Loyihalar</span>
+<span class="lang-uz">AI Loyihalar</span>
+<span class="lang-en" style="display:none;">AI Projects</span>
 </div>
 <div class="stat-item">
 <h3>10+</h3>
-<span>Hamkorlar</span>
+<span class="lang-uz">Hamkorlar</span>
+<span class="lang-en" style="display:none;">Partners</span>
 </div>
 <div class="stat-item">
 <h3>100+</h3>
-<span>Auditoriya</span>
+<span class="lang-uz">Auditoriya</span>
+<span class="lang-en" style="display:none;">Audience</span>
 </div>
 </div>
 </div>
@@ -121,7 +146,7 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <div class="avatar-ring ring-1"></div>
 <div class="avatar-ring ring-2"></div>
 <div class="avatar-ring ring-3"></div>
-<img src="/assets/images/avatar.png" alt="Aziz Asadov">
+<img src="/assets/images/avatar.png" alt="Aziz Asadov" class="hero-avatar">
 <div class="floating-tag tag-1">AI Strategist</div>
 <div class="floating-tag tag-2">Team Leader</div>
 <div class="floating-tag tag-3">Startup Founder</div>
@@ -135,40 +160,44 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <section id="about" class="about section">
 <div class="container">
 <div class="section-header">
-<span>BIO</span>
-<h2>Men Haqimda</h2>
-<p>Sun'iy intellekt, avtomatlashtirish va premium raqamli mahsulotlar yaratishga ixtisoslashganman.</p>
+<span class="section-label"><span class="lang-uz">BIO</span><span class="lang-en" style="display:none;">BIO</span></span>
+<h2><span class="lang-uz">Men Haqimda</span><span class="lang-en" style="display:none;">About Me</span></h2>
+<p><span class="lang-uz">Sun'iy intellekt, avtomatlashtirish va premium raqamli mahsulotlar yaratishga ixtisoslashganman.</span><span class="lang-en" style="display:none;">I specialize in AI, automation, and premium digital products.</span></p>
 </div>
 <div class="about-grid">
 <div class="about-left">
 <div class="large-card">
-<span>AI BUILDER</span>
-<h3>G'oyadan tayyor mahsulotgacha</h3>
-<p>Men oddiy g'oyalarni real foydalaniladigan AI tizimlari, Telegram botlar va biznes avtomatlashtirish platformalariga aylantiraman.</p>
-<p>Asosiy maqsadim — sun'iy intellekt yordamida odamlar va bizneslar uchun vaqt tejaydigan tizimlar yaratish.</p>
+<span class="lang-uz">AI BUILDER</span>
+<span class="lang-en" style="display:none;">AI BUILDER</span>
+<h3><span class="lang-uz">G'oyadan tayyor mahsulotgacha</span><span class="lang-en" style="display:none;">From Idea to Product</span></h3>
+<p><span class="lang-uz">Men oddiy g'oyalarni real foydalaniladigan AI tizimlari, Telegram botlar va biznes avtomatlashtirish platformalariga aylantiraman.</span><span class="lang-en" style="display:none;">I transform simple ideas into real AI systems, Telegram bots and business automation platforms.</span></p>
+<p><span class="lang-uz">Asosiy maqsadim – sun'iy intellekt yordamida odamlar va bizneslar uchun vaqt tejaydigan tizimlar yaratish.</span><span class="lang-en" style="display:none;">My main goal is to create time-saving systems for people and businesses through AI.</span></p>
 </div>
 </div>
 <div class="about-right">
 <div class="info-card">
-<h4>Lavozim</h4>
+<h4><span class="lang-uz">Lavozim</span><span class="lang-en" style="display:none;">Position</span></h4>
 <p>Izdihom PR/Marketing Agency</p>
-<span>AI Team Leader</span>
+<span class="lang-uz">AI Team Leader</span>
+<span class="lang-en" style="display:none;">AI Team Leader</span>
 </div>
 <div class="info-card">
-<h4>Yo'nalish</h4>
+<h4><span class="lang-uz">Yo'nalish</span><span class="lang-en" style="display:none;">Direction</span></h4>
 <p>AI Systems</p>
-<span>Automation & Startup</span>
+<span class="lang-uz">Automation & Startup</span>
+<span class="lang-en" style="display:none;">Automation & Startup</span>
 </div>
 <div class="info-card">
-<h4>Mutaxassislik</h4>
-<p>Telegram Botlar</p>
-<span>Python & API</span>
+<h4><span class="lang-uz">Mutaxassislik</span><span class="lang-en" style="display:none;">Specialization</span></h4>
+<p><span class="lang-uz">Telegram Botlar</span><span class="lang-en" style="display:none;">Telegram Bots</span></p>
+<span class="lang-uz">Python & API</span>
+<span class="lang-en" style="display:none;">Python & API</span>
 </div>
 <div class="info-card">
-<h4>Faoliyat</h4>
-<p>AI Media Production</p>
-<span>Premium Content Creation</span>
-</div>
+<h4><span class="lang-uz">Faoliyat</span><span class="lang-en" style="display:none;">Activity</span></h4>
+<p><span class="lang-uz">AI Media Production</span><span class="lang-en" style="display:none;">AI Media Production</span></p>
+<span class="lang-uz">Premium Content Creation</span>
+<span class="lang-en" style="display:none;">Premium Content Creation</span>
 </div>
 </div>
 </div>
@@ -178,242 +207,16 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <section id="experience" class="experience section">
 <div class="container">
 <div class="section-header">
-<span>TAJRIBA</span>
-<h2>Amaliy Faoliyat</h2>
-<p>Real loyihalar va amaliy tajribalar.</p>
+<span class="section-label"><span class="lang-uz">TAJRIBA</span><span class="lang-en" style="display:none;">EXPERIENCE</span></span>
+<h2><span class="lang-uz">Amaliy Faoliyat</span><span class="lang-en" style="display:none;">Work Experience</span></h2>
+<p><span class="lang-uz">Real loyihalar va amaliy tajribalar.</span><span class="lang-en" style="display:none;">Real projects and practical experience.</span></p>
 </div>
 <div class="timeline">
 <div class="timeline-item">
 <div class="timeline-content">
-<span>2025 - Hozir</span>
-<h3>AI Team Leader</h3>
-<p>Izdihom PR/Marketing Agency AI bo'limini boshqarish, AI strategiyalar ishlab chiqish va avtomatlashtirish tizimlarini joriy etish.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-content">
-<span>AI Media Production</span>
-<h3>Kontent Ekotizimi</h3>
-<p>AI yordamida video, poster, reklama roliklari, viral kontentlar va marketing materiallari yaratish.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-content">
-<span>Telegram Ecosystem</span>
-<h3>Bot Development</h3>
-<p>Telegram botlar, CRM integratsiyalar, avtomatik javob tizimlari va biznes jarayonlarini raqamlashtirish.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-content">
-<span>Startup Projects</span>
-<h3>AI Products</h3>
-<p>AI yordamchilar, ta'lim botlari, qurilish tahlil tizimlari va premium SaaS g'oyalari.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="achievements section">
-<div class="container">
-<div class="achievement-grid">
-<div class="achievement-card">
-<h3>20+</h3>
-<p>AI Loyihalar</p>
-</div>
-<div class="achievement-card">
-<h3>10+</h3>
-<p>Hamkorlar</p>
-</div>
-<div class="achievement-card">
-<h3>100+</h3>
-<p>Auditoriya</p>
-</div>
-<div class="achievement-card">
-<h3>24/7</h3>
-<p>Innovatsiya</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects section">
-<div class="container">
-<div class="section-header">
-<span>PORTFOLIO</span>
-<h2>Mening Loyihalarim</h2>
-<p>Real ishlaydigan AI tizimlar, avtomatlashtirish platformalari va premium raqamli mahsulotlar.</p>
-</div>
-<div class="projects-grid">
-<article class="project-card">
-<div class="project-top"><span>AI ASSISTANT</span></div>
-<h3>Echo AI Assistant</h3>
-<p>Marketing, tarjima, kontent ishlab chiqish, AI chat va biznes yordamchi funksiyalarini birlashtirgan tizim.</p>
-<ul>
-<li>AI Chat</li>
-<li>Kontent Generator</li>
-<li>Tarjima</li>
-<li>Marketing Yordamchi</li>
-</ul>
-</article>
-<article class="project-card">
-<div class="project-top"><span>EDUCATION AI</span></div>
-<h3>AI O'qituvchi Bot</h3>
-<p>O'quvchilar va talabalar uchun yaratilgan aqlli ta'lim yordamchisi.</p>
-<ul>
-<li>Savol-Javob</li>
-<li>Uy Vazifalari</li>
-<li>Testlar</li>
-<li>Fanlar Bo'yicha Yordam</li>
-</ul>
-</article>
-<article class="project-card">
-<div class="project-top"><span>BUILDIQ PRO</span></div>
-<h3>BuildIQ Pro</h3>
-<p>Qurilish va interyer sohasiga mo'ljallangan AI tahlil tizimi.</p>
-<ul>
-<li>Rasm Tahlili</li>
-<li>Smeta Hisobi</li>
-<li>3D Vizualizatsiya</li>
-<li>Narx Baholash</li>
-</ul>
-</article>
-<article class="project-card">
-<div class="project-top"><span>AI CONTENT</span></div>
-<h3>AI Content System</h3>
-<p>Premium kontent ishlab chiqarish va marketing strategiyalari tizimi.</p>
-<ul>
-<li>Instagram Reels</li>
-<li>TikTok Kontent</li>
-<li>Posterlar</li>
-<li>Reklama G'oyalari</li>
-</ul>
-</article>
-</div>
-</div>
-</section>
-
-<!-- SERVICES -->
-<section class="services section">
-<div class="container">
-<div class="section-header">
-<span>XIZMATLAR</span>
-<h2>Nima Qila Olaman</h2>
-<p>Tekshnik va creative yechimlari bilan sizning biznesingizni o'zgartiiring</p>
-</div>
-<div class="services-grid">
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-video"></i></div>
-<h4>AI Media Production</h4>
-<p>Sun'iy intellekt asosida videolar, rasmlar va dizaynlar yaratish – AI yordamida reklama roliklari, logotip animatsiyalari, posterlar va brending materiallari tayyorlash.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-book"></i></div>
-<h4>AI O'qituvchi</h4>
-<p>AI o'qituvchi loyihalari – talabalar va o'quvchilar uchun aqlli yordamchi botlar yaratish. Ular savollarga javob beradi, uy vazifalarini tushuntiradi, testlar tuzadi.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-robot"></i></div>
-<h4>Echo AI Assistant</h4>
-<p>Echo AI Assistant – marketing matnlari, kontent g'oyalari, tarjima, ssenariy yozish va AI chat imkoniyatlariga ega ko'p funksiyali bot.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fab fa-telegram"></i></div>
-<h4>Telegram Botlar</h4>
-<p>Murojaat, kanal boshqaruvi, savdo botlari, admin panelli va API integratsiyali (OpenAI, to'lov tizimlari, Google Sheets) botlar yaratish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-globe"></i></div>
-<h4>Web Saytlar</h4>
-<p>Landing page, portfolio, biznes sayt va onlayn-do'konlar yaratish (HTML, CSS, JS, Python, API).</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-cog"></i></div>
-<h4>Avtomatlashtirish</h4>
-<p>Biznes jarayonlarini AI va API yordamida optimallashtirish, vaqt va xarajatlarni kamaytirish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-building"></i></div>
-<h4>BuildIQ Pro</h4>
-<p>Qurilish sohasi uchun: rasm asosida ob'ekt tahlili, smeta hisoblash, 3D vizualizatsiya va interyer takliflari.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-chart-line"></i></div>
-<h4>Kontent Strategiyasi</h4>
-<p>AI vositalari bilan Instagram, TikTok, YouTube uchun viral kontent, reklama roliklari va brend strategiyalarini ishlab chiqish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fab fa-python"></i></div>
-<h4>Python Dasturlash</h4>
-<p>Backend va frontend asoslari bilan birga, AI integratsiyalari va botlar yozish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-plug"></i></div>
-<h4>API Integratsiyalar</h4>
-<p>OpenAI, Google Sheets, to'lov tizimlari (Click, Payme), ma'lumotlar bazasi (PostgreSQL) va boshqa xizmatlarni bot yoki saytga ulash.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-<h4>AI Kontent Generatsiya</h4>
-<p>Blog maqolalari, mahsulot ta'riflari, e-mail marketing matnlari va ssenariylarni AI bilan yozish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-brain"></i></div>
-<h4>Chatbot Fine-Tuning</h4>
-<p>Maxsus soha (masalan, huquq, tibbiyot, savdo) uchun AI modelini mijoz ma'lumotlari bilan sozlash va yanada aniq javob berishga o'rgatish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-microphone"></i></div>
-<h4>Voice Assistant</h4>
-<p>Telegram yoki web uchun ovozli buyruqlarni qabul qiladigan va matnga aylantirib javob beradigan tizim.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-image"></i></div>
-<h4>Rasm Qayta Ishlash</h4>
-<p>Eski rasmlarni sifatini oshirish (upscale), fonni olib tashlash, rang berish, ob'ektlarni aniqlash.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-chart-bar"></i></div>
-<h4>Ma'lumot Tahlili</h4>
-<p>Excel, CSV yoki Google Sheets ma'lumotlarini AI orqali tahlil qilish, grafiklar va hisobotlar yaratish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-code"></i></div>
-<h4>Kod Yozish & Debug</h4>
-<p>Loyihalar uchun kod fragmentlarini generatsiya qilish, xatolarni topish va tuzatish bo'yicha yordam.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-eye"></i></div>
-<h4>Bot Monitoring</h4>
-<p>Bot faoliyatini kuzatish, xatoliklarni aniqlash va avtomatik xabar yuborish (masalan, Telegram orqali).</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fab fa-wordpress"></i></div>
-<h4>WordPress Integration</h4>
-<p>WordPressda maxsus plagin yordamida AI chatbotni ishga tushirish va mijozlar bilan 24/7 muloqot.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-star"></i></div>
-<h4>Tavsiya Tizimi</h4>
-<p>Foydalanuvchining xatti-harakatlariga qarab mahsulot yoki kontent tavsiya qiluvchi algoritm yaratish.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-globe"></i></div>
-<h4>Ko'p Tilli Bot</h4>
-<p>Bir botni o'zbek, rus, ingliz va boshqa tillarda ishlaydigan qilish (avtomatik tarjima yoki ko'p tilli model).</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-calendar"></i></div>
-<h4>Jadval Boshqaruvi</h4>
-<p>Mijozlarni qabul qilish, uchrashuvlarni rejalashtirish, eslatma yuborish tizimi.</p>
-</div>
-<div class="service-item">
-<div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-<h4>E-Commerce Bot</h4>
-<p>Mahsulotlarni tavsiflash, mijozlarga yordam berish, buyurtma holatini tekshirish va to'lov havolalarini yuborish.</p>
+<span>2025 - <span class="lang-uz">Hozir</span><span class="lang-en" style="display:none;">Present</span></span>
+<h3><span class="lang-uz">AI Team Leader</span><span class="lang-en" style="display:none;">AI Team Leader</span></h3>
+<p><span class="lang-uz">Izdihom PR/Marketing Agency AI bo'limini boshqarish, AI strategiyalar ishlab chiqish va avtomatlashtirish tizimlarini joriy etish.</span><span class="lang-en" style="display:none;">Managing AI department at Izdihom PR/Marketing Agency, developing AI strategies and implementing automation systems.</span></p>
 </div>
 </div>
 </div>
@@ -423,13 +226,13 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <section id="skills" class="skills section">
 <div class="container">
 <div class="section-header">
-<span>KO'NIKMALAR</span>
-<h2>Texnik Arsenal</h2>
-<p>Zamonaviy texnologiya va AI tizimlari</p>
+<span class="section-label"><span class="lang-uz">KO'NIKMALAR</span><span class="lang-en" style="display:none;">SKILLS</span></span>
+<h2><span class="lang-uz">Texnik Arsenal</span><span class="lang-en" style="display:none;">Tech Arsenal</span></h2>
+<p><span class="lang-uz">Zamonaviy texnologiya va AI tizimlari</span><span class="lang-en" style="display:none;">Modern technologies and AI systems</span></p>
 </div>
 <div class="skills-container">
 <div class="skills-column">
-<h3>Backend & AI</h3>
+<h3><span class="lang-uz">Backend & AI</span><span class="lang-en" style="display:none;">Backend & AI</span></h3>
 <div class="tech-arsenal">
 <div class="tech-item">
 <i class="fab fa-python"></i>
@@ -450,7 +253,7 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 </div>
 </div>
 <div class="skills-column">
-<h3>Frontend & Design</h3>
+<h3><span class="lang-uz">Frontend & Design</span><span class="lang-en" style="display:none;">Frontend & Design</span></h3>
 <div class="tech-arsenal">
 <div class="tech-item">
 <i class="fab fa-js"></i>
@@ -471,7 +274,7 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 </div>
 </div>
 <div class="skills-column">
-<h3>Tools & Platforms</h3>
+<h3><span class="lang-uz">Tools & Platforms</span><span class="lang-en" style="display:none;">Tools & Platforms</span></h3>
 <div class="tech-arsenal">
 <div class="tech-item">
 <i class="fab fa-telegram"></i>
@@ -492,26 +295,82 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 </div>
 </div>
 <div class="skills-column">
-<h3>Content & Media</h3>
+<h3><span class="lang-uz">Content & Media</span><span class="lang-en" style="display:none;">Content & Media</span></h3>
 <div class="tech-arsenal">
 <div class="tech-item">
 <i class="fas fa-video"></i>
-<span>Video Edit</span>
+<span><span class="lang-uz">Video Edit</span><span class="lang-en" style="display:none;">Video Edit</span></span>
 </div>
 <div class="tech-item">
 <i class="fas fa-image"></i>
-<span>AI Image Gen</span>
+<span><span class="lang-uz">AI Image Gen</span><span class="lang-en" style="display:none;">AI Image Gen</span></span>
 </div>
 <div class="tech-item">
 <i class="fas fa-pencil-alt"></i>
-<span>Content Writing</span>
+<span><span class="lang-uz">Content Writing</span><span class="lang-en" style="display:none;">Content Writing</span></span>
 </div>
 <div class="tech-item">
 <i class="fas fa-chart-line"></i>
-<span>Analytics</span>
+<span><span class="lang-uz">Analytics</span><span class="lang-en" style="display:none;">Analytics</span></span>
 </div>
 </div>
 </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects section">
+<div class="container">
+<div class="section-header">
+<span class="section-label"><span class="lang-uz">PORTFOLIO</span><span class="lang-en" style="display:none;">PORTFOLIO</span></span>
+<h2><span class="lang-uz">Mening Loyihalarim</span><span class="lang-en" style="display:none;">My Projects</span></h2>
+<p><span class="lang-uz">Real ishlaydigan AI tizimlar va premium raqamli mahsulotlar.</span><span class="lang-en" style="display:none;">Real working AI systems and premium digital products.</span></p>
+</div>
+<div class="projects-grid">
+<article class="project-card">
+<div class="project-top"><span><span class="lang-uz">AI ASSISTANT</span><span class="lang-en" style="display:none;">AI ASSISTANT</span></span></div>
+<h3>Echo AI Assistant</h3>
+<p><span class="lang-uz">Marketing, tarjima, kontent ishlab chiqish, AI chat va biznes yordamchi funksiyalarini birlashtirgan tizim.</span><span class="lang-en" style="display:none;">Multi-functional system combining marketing, translation, content creation, and AI chat capabilities.</span></p>
+<ul>
+<li><span class="lang-uz">AI Chat</span><span class="lang-en" style="display:none;">AI Chat</span></li>
+<li><span class="lang-uz">Kontent Generator</span><span class="lang-en" style="display:none;">Content Generator</span></li>
+<li><span class="lang-uz">Tarjima</span><span class="lang-en" style="display:none;">Translation</span></li>
+<li><span class="lang-uz">Marketing Yordamchi</span><span class="lang-en" style="display:none;">Marketing Assistant</span></li>
+</ul>
+</article>
+<article class="project-card">
+<div class="project-top"><span><span class="lang-uz">EDUCATION AI</span><span class="lang-en" style="display:none;">EDUCATION AI</span></span></div>
+<h3><span class="lang-uz">AI O'qituvchi Bot</span><span class="lang-en" style="display:none;">AI Teacher Bot</span></h3>
+<p><span class="lang-uz">O'quvchilar va talabalar uchun yaratilgan aqlli ta'lim yordamchisi.</span><span class="lang-en" style="display:none;">Smart educational assistant created for students and learners.</span></p>
+<ul>
+<li><span class="lang-uz">Savol-Javob</span><span class="lang-en" style="display:none;">Q&A</span></li>
+<li><span class="lang-uz">Uy Vazifalari</span><span class="lang-en" style="display:none;">Homework Help</span></li>
+<li><span class="lang-uz">Testlar</span><span class="lang-en" style="display:none;">Tests</span></li>
+<li><span class="lang-uz">Fanlar Bo'yicha Yordam</span><span class="lang-en" style="display:none;">Subject Help</span></li>
+</ul>
+</article>
+<article class="project-card">
+<div class="project-top"><span>BuildIQ Pro</span></div>
+<h3>BuildIQ Pro</h3>
+<p><span class="lang-uz">Qurilish va interyer sohasiga mo'ljallangan AI tahlil tizimi.</span><span class="lang-en" style="display:none;">AI analysis system for construction and interior design.</span></p>
+<ul>
+<li><span class="lang-uz">Rasm Tahlili</span><span class="lang-en" style="display:none;">Image Analysis</span></li>
+<li><span class="lang-uz">Smeta Hisobi</span><span class="lang-en" style="display:none;">Cost Estimation</span></li>
+<li><span class="lang-uz">3D Vizualizatsiya</span><span class="lang-en" style="display:none;">3D Visualization</span></li>
+<li><span class="lang-uz">Narx Baholash</span><span class="lang-en" style="display:none;">Price Assessment</span></li>
+</ul>
+</article>
+<article class="project-card">
+<div class="project-top"><span><span class="lang-uz">AI CONTENT</span><span class="lang-en" style="display:none;">AI CONTENT</span></span></div>
+<h3><span class="lang-uz">AI Content System</span><span class="lang-en" style="display:none;">AI Content System</span></h3>
+<p><span class="lang-uz">Premium kontent ishlab chiqarish va marketing strategiyalari tizimi.</span><span class="lang-en" style="display:none;">Premium content creation and marketing strategy system.</span></p>
+<ul>
+<li><span class="lang-uz">Instagram Reels</span><span class="lang-en" style="display:none;">Instagram Reels</span></li>
+<li><span class="lang-uz">TikTok Kontent</span><span class="lang-en" style="display:none;">TikTok Content</span></li>
+<li><span class="lang-uz">Posterlar</span><span class="lang-en" style="display:none;">Posters</span></li>
+<li><span class="lang-uz">Reklama G'oyalari</span><span class="lang-en" style="display:none;">Ad Ideas</span></li>
+</ul>
+</article>
 </div>
 </div>
 </section>
@@ -520,16 +379,16 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <section id="contact" class="contact section">
 <div class="container">
 <div class="section-header">
-<span>ALOQA</span>
-<h2>Bog'lanish</h2>
-<p>Men bilan bog'lanib, yangi loyiha yarataylik!</p>
+<span class="section-label"><span class="lang-uz">ALOQA</span><span class="lang-en" style="display:none;">CONTACT</span></span>
+<h2><span class="lang-uz">Bog'lanish</span><span class="lang-en" style="display:none;">Get in Touch</span></h2>
+<p><span class="lang-uz">Men bilan bog'lanib, yangi loyiha yarataylik!</span><span class="lang-en" style="display:none;">Contact me to start your next project!</span></p>
 </div>
 <div class="contact-content">
 <div class="contact-info">
 <div class="info-item">
 <i class="fas fa-phone"></i>
 <div>
-<h4>Telefon</h4>
+<h4><span class="lang-uz">Telefon</span><span class="lang-en" style="display:none;">Phone</span></h4>
 <p>+998 50 503 34 41</p>
 </div>
 </div>
@@ -554,13 +413,11 @@ Men AI tizimlari, Telegram botlar, avtomatlashtirish platformalari va premium AI
 <!-- FOOTER -->
 <footer class="footer">
 <div class="container">
-<p>&copy; 2025 Aziz Asadov. Barcha huquqlar himoyalangan.</p>
-<p>Developed with <span class="heart">❤️</span> by AI</p>
-</div>
+<p><span class="lang-uz">&copy; 2025 Aziz Asadov. Barcha huquqlar himoyalangan.</span><span class="lang-en" style="display:none;">&copy; 2025 Aziz Asadov. All rights reserved.</span></p>
+<p><span class="lang-uz">Developed with</span><span class="lang-en" style="display:none;">Developed with</span> <span class="heart">❤️</span> <span class="lang-uz">by AI</span><span class="lang-en" style="display:none;">by AI</span></p>
 </footer>
 
 <script src="/assets/js/script.js"></script>
 
 </body>
-
 </html>
